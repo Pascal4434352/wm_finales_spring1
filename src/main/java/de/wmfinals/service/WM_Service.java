@@ -13,9 +13,9 @@ import java.util.List;
 
 @Service
 public class WM_Service {
-    private final CountryRepository countryRepository;
-    private final MatchRepository matchRepository;
-    private final MatchTeamRepository matchTeamRepository;
+    private CountryRepository countryRepository;
+    private MatchRepository matchRepository;
+    private MatchTeamRepository matchTeamRepository;
 
     public WM_Service(CountryRepository countryRepository) {
         this.countryRepository = countryRepository;
@@ -26,9 +26,8 @@ public class WM_Service {
     public WM_Service(MatchTeamRepository matchTeamRepository) {
         this.matchTeamRepository = matchTeamRepository;
     }
-
     //------------------------------------------------------------------------------------------------------------------
-    public List<country> getAllCountries(){
+    public List<country> getAllCountries() {
         return countryRepository.findAll();
     }
     public country getCountryByName(String name){

@@ -9,6 +9,7 @@ public class match_team {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int match_id;
+
     private int country_id;
     private int score;
     private int is_winner;

@@ -11,6 +11,7 @@ public class match {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private Date date;
     private String location;
     private boolean penaltyShootout;

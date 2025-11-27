@@ -13,6 +13,7 @@ public class country {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String name;
 
     public int getcountryId() { return id; }
